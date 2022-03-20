@@ -1,0 +1,296 @@
+:root {
+  --blue: #355bc0;
+  --dark-blue: #153b90;
+  --light-blue: #e7e8f1;
+  --black: #1f2532;
+  --white: #ffffff;
+  --aqua-blue: #8889ff;
+  --green: #358856;
+  --grey: #5f5572;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+textarea,
+input,
+button {
+  color: var(--black);
+  font-family: "Inter", Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: var(--light-blue);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+main {
+  height: 90vh;
+  width: 90vw;
+
+  border-radius: 7px;
+
+  display: flex;
+  flex-direction: row;
+}
+
+button:disabled {
+  opacity: 0.5;
+}
+
+main .left,
+.right {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main .left {
+  background: var(--white);
+  border-radius: 7px 0 0 7px;
+}
+
+main .left header {
+  text-align: center;
+}
+
+main .left header h1 {
+  font-size: 30px;
+}
+
+main .left header p {
+  margin: 5px 20px;
+  max-width: 450px;
+}
+
+main .left form button {
+  border: none;
+  padding: 15px;
+  border-radius: 5px;
+
+  font-size: 15px;
+  color: var(--white);
+
+  background: var(--blue);
+
+  transition: 0.4s;
+}
+
+button:not(:disabled) {
+  cursor: pointer;
+}
+
+main .left form button:not(:disabled):hover {
+  background: var(--dark-blue);
+  border-radius: 0;
+}
+
+main .right {
+  background: linear-gradient(
+    to bottom right,
+    var(--dark-blue),
+    var(--blue),
+    var(--aqua-blue)
+  );
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+
+  border-radius: 0 7px 7px 0;
+
+  color: var(--white);
+}
+
+main .left form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 15px;
+}
+
+.celsius_input {
+  position: relative;
+}
+
+.celsius_input input:not(:placeholder-shown):focus {
+  border-color: var(--blue);
+}
+
+.celsius_input input:not(:placeholder-shown):focus ~ label,
+.celsius_input input:not(:placeholder-shown):focus ~ span {
+  color: var(--blue);
+}
+
+.celsius_input input:not(:placeholder-shown):not(:focus):valid {
+  border-color: var(--green);
+}
+
+.celsius_input input:not(:placeholder-shown):not(:focus):valid ~ label,
+.celsius_input input:not(:placeholder-shown):not(:focus):valid ~ span {
+  color: var(--green);
+}
+
+.celsius_input span {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  letter-spacing: 1px;
+  color: var(--grey);
+}
+
+.celsius_input label {
+  position: absolute;
+  color: var(--grey);
+  top: 10px;
+  left: 8px;
+  background: var(--white);
+  padding: 3px;
+  font-size: 12px;
+}
+
+.celsius_input input {
+  margin: 20px 0;
+  padding: 10px;
+  border: none;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  font-size: 25px;
+  max-width: 225px;
+  text-align: right;
+  padding-right: 35px;
+}
+
+.logo {
+  height: 75px;
+  margin-bottom: 15px;
+}
+
+main .right .result {
+  width: 90%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin: 25px;
+}
+
+main .right .result .type {
+  font-size: 20px;
+}
+
+main .right .result .number {
+  font-size: 100px;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.5;
+}
+
+main .right .none {
+  font-size: 20px;
+  text-align: center;
+}
+
+.loader {
+  margin: 0 0 2em;
+  height: 100px;
+  width: 20%;
+  text-align: center;
+  padding: 1em;
+  margin: 0 auto 1em;
+  display: inline-block;
+  vertical-align: top;
+}
+
+@media (max-width: 900px) {
+  main {
+    display: block;
+
+    height: 100vh;
+    width: 90vw;
+  }
+
+  main,
+  main .left,
+  main .right {
+    border-radius: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  main .left,
+  main .right {
+    margin: 3vh 0;
+  }
+
+  main .left,
+  main .right {
+    height: 94vh;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: var(--grey);
+  opacity: 0.8; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: var(--grey);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: var(--grey);
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
