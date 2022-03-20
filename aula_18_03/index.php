@@ -11,7 +11,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-  <link rel="stylesheet" href="css/main.css" />
+  <style>
+  body{font-family:"Inter", Arial, Helvetica, sans-serif;margin:0;padding:0;height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;color:#131319}.fa{font-size:35px;height:50px;width:50px;background:#ededf3;color:#131319;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;border-radius:50%;-webkit-transition:0.3s;transition:0.3s}.fa:hover{color:#358856}h1{font-weight:500;margin-bottom:-10px}ul{list-style:none;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;max-width:900px;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}ul li{margin:10px;width:400px;-webkit-transition:0.3s;transition:0.3s}ul li a div{color:#131319;padding:1px 15px;border-left:3px solid #7366ec;background:#ededf3;-webkit-transition:0.3s;transition:0.3s}ul li a div h2{font-size:20px;margin-bottom:-10px}ul li a div p{font-size:15px;white-space:nowrap;text-overflow:ellipsis;overflow:hidden}ul li:hover a div{border-color:#358856}a{text-decoration:none}
+  </style>
 </head>
 <body>
   <a href="https://github.com/rafaeldiehl/exercicios-wepd3/aula_18_03" target="_blank">
