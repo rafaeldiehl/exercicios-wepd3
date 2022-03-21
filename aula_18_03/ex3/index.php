@@ -83,6 +83,7 @@
     });
   </script>
 </body>
+</html>
 <?php
 
   function ehDivisivel($numerador, $denominador) {
