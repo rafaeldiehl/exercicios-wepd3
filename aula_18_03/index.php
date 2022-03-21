@@ -16,7 +16,7 @@
   </style>
 </head>
 <body>
-  <a href="https://github.com/rafaeldiehl/exercicios-wepd3/aula_18_03" target="_blank">
+  <a href="https://github.com/rafaeldiehl/exercicios-wepd3/tree/main/aula_18_03" target="_blank">
     <span class="fa fa-github"></span>
   </a>
   <h1>Lista de Exercícios</h1>
