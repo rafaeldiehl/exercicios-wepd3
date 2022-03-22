@@ -27,6 +27,7 @@
 
   <div class="result">
     <header>
+      <img src="assets/img/salario.png" alt="Salário" />
       <h1>Resultado</h1>
       <p>Com base nos dados informados, calculamos o reajuste</p>
     </header>

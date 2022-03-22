@@ -3,6 +3,7 @@
 ?>
 
   <header>
+    <img src="assets/img/salario.png" alt="Salário">
     <h1>Reajuste de salário</h1>
     <p>Preencha os campos abaixo e verifique seu novo salário</p>
   </header>
