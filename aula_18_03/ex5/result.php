@@ -44,7 +44,7 @@
         <span class="name">Salário</span>
         <span class="value">
           <?php
-           echo "R$" . number_format((float)$_POST["salario"], 2, ',', '');
+           echo "R$ " . number_format((float)$_POST["salario"], 2, ',', '');
           ?>
         </span>
       </li>
@@ -53,7 +53,7 @@
         <span class="name">Novo Salário</span>
         <span class="value novo">
         <?php
-          echo "R$" . number_format((float)reajusteSalario($_POST["salario"]), 2, ',', '');
+          echo "R$ " . number_format((float)reajusteSalario($_POST["salario"]), 2, ',', '');
         ?>
         </span>
       </li>
